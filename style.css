@@ -1,0 +1,489 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f9ff;
+    color: #334155;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+
+    background: white;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+nav ul {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #334155;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #0ea5e9;
+}
+
+
+/* =========================
+   BERANDA
+========================= */
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #bae6fd,
+        #e0f2fe
+    );
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 800px;
+}
+
+.profile-photo {
+    width: 170px;
+    height: 170px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid white;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+.hero h1 {
+    font-size: 45px;
+    color: #075985;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #0369a1;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background: white;
+    color: #0284c7;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.button:hover {
+    background: #0284c7;
+    color: white;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+section > h2 {
+    font-size: 32px;
+    color: #0284c7;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================
+   CARD
+========================= */
+.card {
+    max-width: 750px;
+    margin: auto;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(14, 165, 233, 0.10);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card p {
+    color: #475569;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #0284c7;
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   HOBI
+========================= */
+.hobby-card {
+    width: 300px;
+    text-align: center;
+}
+
+.hobby-icon {
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #e0f2fe;
+
+    border-radius: 50%;
+
+    font-size: 45px;
+
+    transition: 0.3s;
+}
+
+.hobby-card:hover .hobby-icon {
+    transform: scale(1.1);
+    background: #bae6fd;
+}
+
+
+/* =========================
+   PROJECT
+========================= */
+#project {
+    background: #e0f2fe;
+}
+
+.project-card {
+    width: 400px;
+    text-align: center;
+}
+
+.project-icon {
+    width: 80px;
+    height: 80px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #e0f2fe;
+
+    border-radius: 20px;
+
+    font-size: 40px;
+}
+
+.project-label {
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    background: #e0f2fe;
+    color: #0284c7;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   TEKNOLOGI
+========================= */
+.tech {
+    padding: 18px 30px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 18px rgba(14, 165, 233, 0.10);
+
+    color: #0284c7;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.tech:hover {
+    transform: translateY(-5px);
+    background: #38bdf8;
+    color: white;
+}
+
+
+/* =========================
+   KONTAK
+========================= */
+#kontak {
+    background: #f0f9ff;
+}
+
+#kontak a {
+    color: #0284c7;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    padding: 30px;
+
+    text-align: center;
+
+    background: #075985;
+    color: white;
+}
+
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        min-height: 85vh;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .profile-photo {
+        width: 140px;
+        height: 140px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+}
+/* =========================
+   TEKNOLOGI CARD
+========================= */
+
+.tech-card {
+    width: 220px;
+    text-align: center;
+}
+
+.tech-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #e0f2fe;
+
+    border-radius: 18px;
+
+    font-size: 38px;
+
+    transition: 0.3s;
+}
+
+.tech-card:hover .tech-icon {
+    transform: translateY(-5px) scale(1.08);
+    background: #bae6fd;
+}
+
+.tech-card h3 {
+    color: #0284c7;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.tech-card p {
+    font-size: 14px;
+    color: #64748b;
+}
+/* =========================
+   KONTAK
+========================= */
+
+#kontak {
+    background: #f0f9ff;
+}
+
+.contact-text {
+    margin-bottom: 30px;
+    color: #64748b;
+}
+
+.contact-container {
+    gap: 25px;
+}
+
+.contact-card {
+    width: 280px;
+    text-align: center;
+}
+
+.contact-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #e0f2fe;
+
+    border-radius: 50%;
+
+    font-size: 35px;
+
+    transition: 0.3s;
+}
+
+.contact-card:hover .contact-icon {
+    transform: scale(1.1);
+    background: #bae6fd;
+}
+
+.contact-card h3 {
+    color: #0284c7;
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.contact-card p {
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    background: #38bdf8;
+    color: white;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    background: #0284c7;
+    transform: translateY(-3px);
+}
