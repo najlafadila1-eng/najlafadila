@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daftar Tugas</title>
+</head>
+<body>
+  <h1>Daftar Tugas</h1>
+
+  <input id="tugas" type="text" placeholder="Masukkan tugas">
+  <button id="tambah">Tambah</button>
+
+  <ul id="daftar"></ul>
+
+  <script>
+    const input = document.getElementById("tugas");
+    const tombol = document.getElementById("tambah");
+    const daftar = document.getElementById("daftar");
+
+    tombol.addEventListener("click", function () {
+      if (input.value.trim() === "") {
+        alert("Tugas tidak boleh kosong");
+        return;
+      }
+
+      const item = document.createElement("li");
+      item.textContent = input.value;
+
+      daftar.appendChild(item);
+      input.value = "";
+    });
+  </script>
+</body>
+</html>
